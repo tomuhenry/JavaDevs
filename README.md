@@ -19,3 +19,7 @@
   
 Bonus:
 Explore the MVP Architecture Pattern and implement it in your project.
+
+### Mockups/Wireframe
+
+The link to the mockups is here https://marvelapp.com/gjd68cj/screen/54658244
