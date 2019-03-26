@@ -25,6 +25,9 @@ jobs:
         name: Run Tests
         command: ./gradlew lint test
     - run:
+        name: Generate Jacoco test report
+        command: ./gradlew build jacocoTestReport
+    - run:
         name: Publish coverage report to codecov
         command: bash <(curl -s https://codecov.io/bash)
     - store_artifacts:
