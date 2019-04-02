@@ -1,31 +1,19 @@
 ## Badges
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/94c7e133cb01ed229145/maintainability)](https://codeclimate.com/github/tomuhenry/JavaDevs/maintainability)
-[![CircleCI](https://circleci.com/gh/tomuhenry/JavaDevs/tree/ft-color-palatte-159051218.svg?style=svg)](https://circleci.com/gh/tomuhenry/JavaDevs/tree/ft-color-palatte-159051218)
+[![CircleCI](https://circleci.com/gh/tomuhenry/JavaDevs/tree/develop.svg?style=svg)](https://circleci.com/gh/tomuhenry/JavaDevs/tree/develop)
+[![codecov](https://codecov.io/gh/tomuhenry/JavaDevs/branch/develop/graph/badge.svg)](https://codecov.io/gh/tomuhenry/JavaDevs)
+[![codecov](https://codecov.io/gh/tomuhenry/JavaDevs/branch/ft-recycler-view-155738443/graph/badge.svg)](https://codecov.io/gh/tomuhenry/JavaDevs)
 
 # Build an Android app to retrieve a list of Java Developers in Nairobi using the Github API (Links to an external site.)Links to an external site.
 
-## Display the list of developers on a list. Each item on the list should have:
-- User’s profile image
-- User’s GitHub username
-
-## Clicking each item on the list should show their profile details.
-
-## The profile screen should contain:
-- Username
-- Profile photo
-- Github profile URL
-- Button to share their profile, and it should launch a share intent and the content of the share should be “Check out this awesome developer @<github username>, <github profile url>.”
-- Clicking on the Github url should launch the browser and link to their Github page.
-  
-## Remember to write tests for your functionality.
-- Use the TDD approach for your tests
-- Explore Unit Tests, Integration and UI Tests in Android
-  
-Bonus:
-Explore the MVP Architecture Pattern and implement it in your project.
-
 ### Mockups/Wireframe
+
+For the mockup design, I used an online site called [marvelapp](https://marvelapp.com/). 
+I chose this resource because:
+- It is easy to use and comes with preset views which make the designing process fast
+- It is also easier to share the mockups using such online resources as compared to the offline ones
+- The online site also allows me to work on the mockup wherever I am using any computer that I choose to use
 
 [Link to Mockups](https://marvelapp.com/gjd68cj/screen/54658244)
 
