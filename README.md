@@ -23,14 +23,5 @@ I chose this resource because:
 
 ![wireframes](wireFrames/mockup.gif)
 
-![wireframe](wireFrames/1.png)
-
-![wireframe](wireFrames/5.png)
-
-![wireframe1](wireFrames/2.png)
-
-![wireframe](wireFrames/3.png)
-
-![wireframe](wireFrames/4.png)
 
 

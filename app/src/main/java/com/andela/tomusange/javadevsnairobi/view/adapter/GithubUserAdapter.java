@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.andela.tomusange.javadevsnairobi.R;
 import com.andela.tomusange.javadevsnairobi.view.view.DetailActivity;
@@ -81,7 +80,6 @@ public class GithubUserAdapter extends RecyclerView.Adapter<GithubUserAdapter.Vi
                         intent.putExtra("imageUrl", userDetails.get(position).getImageUrl());
                         intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         context.startActivity(intent);
-                        Toast.makeText(v.getContext(), "You clicked " + clickedDataUserDetail.getUserName(), Toast.LENGTH_SHORT).show();
                     }
                 }
             });
