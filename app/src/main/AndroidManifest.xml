@@ -11,13 +11,21 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".view.view.MainActivity"
+            android:configChanges="orientation|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.view.DetailActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="true"
+            android:parentActivityName=".view.view.MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".view.view.MainActivity"/>
+        </activity>
     </application>
-
 </manifest>

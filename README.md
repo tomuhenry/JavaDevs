@@ -1,11 +1,15 @@
+## JavaDevs
+- Platform to find a list of all Java Developers in Nairobi
+
+## Description
+
+- JavaDevs is an Android app that provides users with links to github repositories of all java developers in Nairobi.
+
 ## Badges
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/94c7e133cb01ed229145/maintainability)](https://codeclimate.com/github/tomuhenry/JavaDevs/maintainability)
 [![CircleCI](https://circleci.com/gh/tomuhenry/JavaDevs/tree/develop.svg?style=svg)](https://circleci.com/gh/tomuhenry/JavaDevs/tree/develop)
 [![codecov](https://codecov.io/gh/tomuhenry/JavaDevs/branch/develop/graph/badge.svg)](https://codecov.io/gh/tomuhenry/JavaDevs)
-[![codecov](https://codecov.io/gh/tomuhenry/JavaDevs/branch/ft-recycler-view-155738443/graph/badge.svg)](https://codecov.io/gh/tomuhenry/JavaDevs)
-
-# Build an Android app to retrieve a list of Java Developers in Nairobi using the Github API (Links to an external site.)Links to an external site.
 
 ### Mockups/Wireframe
 

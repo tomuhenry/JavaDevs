@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="153dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/git_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_image"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="User name"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textFontWeight="600"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/github_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/git_user_name"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-medium"
+        android:text="github/url.com"
+        android:textColor="#0065DE"
+        android:textFontWeight="500"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/dev_detail"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/github_url"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:background="@color/colorPrimaryLight"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Java Developer" />
+
+    <TextView
+        android:id="@+id/bio_text"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/dev_detail"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="3dp"
+        android:background="@color/colorPrimary"
+        android:paddingLeft="10dp"
+        android:paddingTop="15dp"
+        android:text="Java Developer, Based in Nairobi Kenya " />
+
+</RelativeLayout>
