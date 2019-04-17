@@ -1,11 +1,11 @@
 package com.andela.tomusange.javadevsnairobi.view.presenter;
 import android.content.Context;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.andela.tomusange.javadevsnairobi.view.model.AllUserResponse;
 import com.andela.tomusange.javadevsnairobi.view.service.GithubService;
 import com.andela.tomusange.javadevsnairobi.view.view.AllUserView;
-
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -24,6 +24,7 @@ public class GitUserPresenter {
     public void getDevProfiles(final AllUserView allUserView) {
         try{
             githubService.getAPI().getItems().enqueue(new Callback<AllUserResponse>() {
+
                 @Override
                 public void onResponse(Call<AllUserResponse> call, Response<AllUserResponse> response) {
 
