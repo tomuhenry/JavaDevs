@@ -6,7 +6,6 @@ import com.andela.tomusange.javadevsnairobi.view.model.AllUserResponse;
 import com.andela.tomusange.javadevsnairobi.view.service.GithubService;
 import com.andela.tomusange.javadevsnairobi.view.view.AllUserView;
 
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -24,6 +23,7 @@ public class GitUserPresenter {
     public void getDevProfiles(final AllUserView allUserView) {
         try{
             githubService.getAPI().getItems().enqueue(new Callback<AllUserResponse>() {
+
                 @Override
                 public void onResponse(Call<AllUserResponse> call, Response<AllUserResponse> response) {
 
