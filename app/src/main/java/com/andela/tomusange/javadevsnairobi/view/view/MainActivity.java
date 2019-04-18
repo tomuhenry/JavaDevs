@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity implements AllUserView{
     private CoordinatorLayout coordinatorLayout;
     Parcelable listState;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements AllUserView{
 
         swipeContainer = findViewById(R.id.swipeContainer);
 
-        swipeContainer.setColorSchemeResources(android.R.color.background_light
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_dark
         );
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
