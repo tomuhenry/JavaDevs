@@ -1,5 +1,6 @@
 package com.andela.tomusange.javadevsnairobi.view.presenter;
 import android.content.Context;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.andela.tomusange.javadevsnairobi.view.model.AllUserResponse;

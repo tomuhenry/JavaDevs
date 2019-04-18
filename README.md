@@ -11,6 +11,45 @@
 [![CircleCI](https://circleci.com/gh/tomuhenry/JavaDevs/tree/develop.svg?style=svg)](https://circleci.com/gh/tomuhenry/JavaDevs/tree/develop)
 [![codecov](https://codecov.io/gh/tomuhenry/JavaDevs/branch/develop/graph/badge.svg)](https://codecov.io/gh/tomuhenry/JavaDevs)
 
+## Getting Started
+
+Follow the Instructions below to have the Application running on your local machine
+
+### Prerequisites
+- Android Studio 
+- JDK 
+- Git 
+
+## Android setup
+
+This Project is built with `Java`. It also has unit tests and Espresso UI tests.
+
+### Installation
+
+- Clone the repo by running this command in your terminal 
+`git clone https://github.com/tomuhenry/JavaDevs.git` 
+- Import the project into android studio 
+- Create an `Android Virtual Device` (AVD) or connect an `android device` to your machine
+- Run the project 
+- Run the tests
+
+### Testing
+
+JUnit unit tests can be run using one of the following:
+
+`./gradlew jacocoTestCoverage`
+`./gradlew jacocoTestReport`
+
+### Fastlane
+
+Fastlane is used to automate sharing of debug sample APK's on slack. To set it up;
+
+- Install fastlane
+`brew cask install fastlane`
+
+- Setup Slack environment variables for SLACK_URL and SLACK_TOKEN
+- Run `fastlane` in the terminal
+
 ### Mockups/Wireframe
 
 For the mockup design, I used an online site called [marvelapp](https://marvelapp.com/). 
@@ -21,7 +60,6 @@ I chose this resource because:
 
 [Link to Mockups](https://marvelapp.com/gjd68cj/screen/54658244)
 
-![wireframes](wireFrames/mockup.gif)
+### Demo file
 
-
-
+![demo-gif](wireFrames/JavaDevsNairobi.gif)
