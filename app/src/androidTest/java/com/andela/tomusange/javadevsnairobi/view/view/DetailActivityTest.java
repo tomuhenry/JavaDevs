@@ -1,45 +1,50 @@
 package com.andela.tomusange.javadevsnairobi.view.view;
 
 import android.content.Intent;
+import android.os.SystemClock;
 import android.support.test.espresso.intent.rule.IntentsTestRule;
-import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
+
+import com.andela.tomusange.javadevsnairobi.R;
 
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import androidx.test.filters.LargeTest;
+import static android.support.test.espresso.Espresso.onView;
+import static android.support.test.espresso.action.ViewActions.click;
+import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.matcher.ViewMatchers.withId;
+import static android.support.test.espresso.matcher.ViewMatchers.withText;
 
-import static org.junit.Assert.*;
-
-@LargeTest
 @RunWith(AndroidJUnit4.class)
 public class DetailActivityTest {
 
-    private final String userName = "k33ptoo";
-    private final String githubUrl = "";
-    private final String imageUrl = "https://avatars0.githubusercontent.com/u/6637970?v=4";
 
     @Rule
-    public ActivityTestRule<DetailActivity> detailActivityActivityTestRule = new
-            ActivityTestRule<>(DetailActivity.class);
-
-    @Rule
-    public IntentsTestRule<DetailActivity> intentsTestRule = new
-            IntentsTestRule<>(DetailActivity.class, true, false);
+    public IntentsTestRule<DetailActivity> activityIntentsTestRule =
+            new IntentsTestRule<>(DetailActivity.class, true, false);
 
     @Before
-    public void startActivity() throws InterruptedException {
+    public void stubUserName(){
+        Intent intent = new Intent();
 
+        intent.putExtra("userName", "jumaallan");
+        intent.putExtra("imageUrl", "https://avatars3.githubusercontent.com/u/25085146?v=4");
+        intent.putExtra("gihubUrl", "https://github.com/jumaallan");
+        activityIntentsTestRule.launchActivity(intent);
     }
 
     @Test
-    public void onCreate() {
+    public void test_username_displayed(){
+        onView(withId(R.id.git_user_name)).check(matches(withText("jumaallan")));
     }
 
     @Test
-    public void onCreateOptionsMenu() {
+    public void test_share_intent(){
+        SystemClock.sleep(3000);
+        onView(withId(R.id.share_menu)).perform(click());
     }
+
 }

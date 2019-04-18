@@ -2,20 +2,13 @@ package com.andela.tomusange.javadevsnairobi.view.view;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-<<<<<<< Updated upstream
 import android.os.Parcelable;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.design.widget.Snackbar;
-=======
->>>>>>> Stashed changes
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-<<<<<<< Updated upstream
-=======
-import android.widget.TextView;
->>>>>>> Stashed changes
 import android.widget.Toast;
 
 import com.andela.tomusange.javadevsnairobi.R;
@@ -23,10 +16,7 @@ import com.andela.tomusange.javadevsnairobi.view.adapter.GithubUserAdapter;
 import com.andela.tomusange.javadevsnairobi.view.model.AllUserResponse;
 import com.andela.tomusange.javadevsnairobi.view.model.UserDetail;
 import com.andela.tomusange.javadevsnairobi.view.presenter.GitUserPresenter;
-<<<<<<< Updated upstream
 import com.andela.tomusange.javadevsnairobi.view.utility.CheckConnection;
-=======
->>>>>>> Stashed changes
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,15 +27,11 @@ public class MainActivity extends AppCompatActivity implements AllUserView{
     ProgressDialog loadingData;
     List<UserDetail> userDetails;
     SwipeRefreshLayout swipeContainer;
-<<<<<<< Updated upstream
     GitUserPresenter gitUserPresenter = new GitUserPresenter(this);
     private CheckConnection checkConnection;
     private CoordinatorLayout coordinatorLayout;
     Parcelable listState;
-=======
-    TextView Disconnected;
-    GitUserPresenter gitUserPresenter = new GitUserPresenter(this);
->>>>>>> Stashed changes
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +39,6 @@ public class MainActivity extends AppCompatActivity implements AllUserView{
         setContentView(R.layout.activity_main);
 
         initViews();
-<<<<<<< Updated upstream
 
         if (savedInstanceState != null) {
             userDetails = savedInstanceState.getParcelableArrayList("items");
@@ -71,15 +56,8 @@ public class MainActivity extends AppCompatActivity implements AllUserView{
 
         swipeContainer = findViewById(R.id.swipeContainer);
 
-        swipeContainer.setColorSchemeResources(android.R.color.background_light
+        swipeContainer.setColorSchemeResources(android.R.color.holo_blue_dark
         );
-=======
-        gitUserPresenter.getDevProfiles(this);
-
-        swipeContainer = findViewById(R.id.swipeContainer);
-
-        swipeContainer.setColorSchemeResources(android.R.color.holo_orange_dark);
->>>>>>> Stashed changes
         swipeContainer.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override
             public void onRefresh() {
