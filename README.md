@@ -60,6 +60,7 @@ I chose this resource because:
 
 [Link to Mockups](https://marvelapp.com/gjd68cj/screen/54658244)
 
-### Demo file
+![Mockup](wireFrames/mockup.gif)
 
+### Demo file
 ![demo-gif](wireFrames/JavaDevsNairobi.gif)
